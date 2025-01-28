@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo-deepseek-r1.ollama
+
+# Server configuration
+server:
+  port: 8080
+  error:
+    include-message: always
+
+# Ollama configuration
+ollama:
+  endpoint: http://localhost:11434/api/generate
+  model: deepseek-r1:1.5b
+  timeout:
+    connect: 30000
+    read: 60000
