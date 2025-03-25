@@ -1,0 +1,15 @@
+<div class="chat-container">
+    <div class="chat-box" #chatBox>
+      <div *ngFor="let message of messages" class="chat-message" [ngClass]="message.sender">
+        <div class="bubble" [innerHTML]="message.text"></div>
+      </div>
+    </div>
+  
+    <form (ngSubmit)="sendMessage()" class="chat-form">
+      <input [(ngModel)]="prompt" name="prompt" required placeholder="Ask something..." />
+      <button type="submit" [disabled]="loading">Send</button>
+    </form>
+  
+    <div *ngIf="loading" class="loading">🤖 Thinking...</div>
+  </div>
+  

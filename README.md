@@ -9,6 +9,7 @@ This project demonstrates how to run a local **Large Language Model (LLM)** usin
 - 🛡️ Keeps your prompts and data local
 - ⚡ Low latency inference via REST
 - ☕ Powered by Java 21 and Spring Boot 3.4.2
+- 🅰️ Integrated Angular Frontend
 
 ## 📦 Prerequisites
 
@@ -32,36 +33,51 @@ ollama serve
 ollama pull deepseek-r1:1.5b
 ```
 
-### 3. Test Locally via cURL
+### 3. Build and Run the Application
 
 ```bash
-curl -X POST http://localhost:11434/api/generate \
-  -d '{"model": "deepseek-r1:1.5b", "prompt": "Hello", "stream": false}'
+# Clone the repository
+git clone https://github.com/HenryXiloj/demo-ollama-deepseek-r1
+cd demo-ollama-deepseek-r1
+
+# Clean, build, and run the application
+mvn clean install 
+spring-boot:run
 ```
 
-## 🛠️ Spring Boot Configuration
+> **Note:** The Maven build will:
+> - Install Node.js and npm
+> - Install frontend dependencies
+> - Build the Angular frontend
+> - Compile and run the Spring Boot backend
 
-Create an `application.yml` with the following configuration:
+## 📁 Project Structure
 
-```yaml
-spring:
-  application:
-    name: demo-deepseek-r1.ollama
-server:
-  port: 8080
-  error:
-    include-message: always
-ollama:
-  endpoint: http://localhost:11434/api/generate
-  model: deepseek-r1:1.5b
-  timeout:
-    connect: 30000
-    read: 60000
+```
+📁 demo-ollama-deepseek-r1/
+├── angular-ui/
+│   └── src/app/
+│       ├── app.component.ts
+│       ├── app.component.html
+│       ├── app.config.ts
+│       └── chat/
+│           ├── chat.component.ts
+│           ├── chat.component.html
+│           └── chat.component.scss
+│
+├── src/main/java/com/henry/ollama/
+│   ├── Application.java
+│   ├── config/OllamaProperties.java
+│   ├── controller/ChatController.java
+│   ├── record/OllamaRequest.java
+│   ├── record/OllamaResponse.java
+│   └── service/OllamaService.java
+
 ```
 
 ## 🧪 Testing the API
 
-Start the Spring Boot application, then test the chat endpoint:
+After starting the application, you can test the chat endpoint:
 
 ```bash
 curl -X POST -H "Content-Type: text/plain" \
@@ -90,29 +106,6 @@ netsh interface portproxy add v4tov4 listenport=11434 listenaddress=0.0.0.0 conn
 New-NetFirewallRule -DisplayName "Ollama-WSL" -Direction Inbound -Protocol TCP -LocalPort 11434 -Action Allow
 ```
 
-## 📁 Project Structure
-
-```
-src/
-└── main/
-    ├── java/
-    │   └── com/
-    │       └── henry/
-    │           └── ollama/
-    │               ├── Application.java
-    │               ├── config/
-    │               │   └── OllamaProperties.java
-    │               ├── controller/
-    │               │   └── ChatController.java
-    │               ├── record/
-    │               │   ├── OllamaRequest.java
-    │               │   └── OllamaResponse.java
-    │               └── service/
-    │                   └── OllamaService.java
-    └── resources/
-        └── application.yml
-```
-
 ## 📚 Resources
 
 - [Ollama Documentation](https://ollama.com)
@@ -124,3 +117,7 @@ src/
 ## 📜 License
 
 This project is open-source under the MIT License.
+
+## 🙌 Author
+
+Created with ❤️ by Henry Xiloj 🔗 [Blog: jarmx.blogspot.com](https://jarmx.blogspot.com)

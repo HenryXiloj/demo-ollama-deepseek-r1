@@ -1,25 +1,76 @@
-HELP.md
+# =========================================================
+# Root .gitignore for Spring Boot + Angular (angular-ui/)
+# =========================================================
+
+# === Spring Boot ===
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+*.log
 
-### STS ###
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Build output (optional: only ignore if not committing Angular output)
+# src/main/resources/static/
+
+# === Angular Frontend ===
+angular-ui/node_modules/
+angular-ui/dist/
+angular-ui/tmp/
+angular-ui/out-tsc/
+angular-ui/bazel-out/
+angular-ui/.angular/
+angular-ui/.angular/cache/
+angular-ui/.sass-cache/
+angular-ui/.history/
+angular-ui/.output/
+angular-ui/.browser/
+angular-ui/.server/
+angular-ui/connect.lock
+angular-ui/coverage/
+angular-ui/libpeerconnection.log
+angular-ui/testem.log
+angular-ui/typings/
+angular-ui/npm-debug.log
+angular-ui/yarn-error.log
+
+# Angular IDE/editor configs
+angular-ui/.idea/
+angular-ui/.project
+angular-ui/.classpath
+angular-ui/.c9/
+angular-ui/*.launch
+angular-ui/.settings/
+angular-ui/*.sublime-workspace
+
+# VS Code (allow workspace settings)
+angular-ui/.vscode/*
+!angular-ui/.vscode/settings.json
+!angular-ui/.vscode/tasks.json
+!angular-ui/.vscode/launch.json
+!angular-ui/.vscode/extensions.json
+
+# === IDEs & Editors ===
+
+## Eclipse / STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+## IntelliJ IDEA ###
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+## NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +80,20 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+## VS Code ###
 .vscode/
+
+# === OS Files ===
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+/node/
