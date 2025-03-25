@@ -76,8 +76,6 @@ curl -X POST -H "Content-Type: text/plain" \
 ```bash
 sudo ufw enable
 sudo ufw allow 11434
-sudo systemctl stop ollama
-sudo lsof -i :11434
 export OLLAMA_HOST=0.0.0.0
 ollama serve
 ```
@@ -112,6 +110,7 @@ src/
 - [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
 - [Spring Boot 3.4.2 Docs](https://docs.spring.io/spring-boot/docs/3.4.2/reference/htmlsingle/)
 - [Java 21 Features](https://docs.oracle.com/en/java/javase/21/)
+- [LinkedIn Article: Integrating Ollama DeepSeek-R1 with Spring Boot](https://www.linkedin.com/pulse/integrating-ollama-deepseek-r1-spring-boot-henry-xiloj-herrera-jvaye/)
 
 ## 📜 License
 
