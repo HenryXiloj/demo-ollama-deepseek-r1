@@ -11,6 +11,12 @@ This project demonstrates how to run a local **Large Language Model (LLM)** usin
 - ☕ Powered by Java 21 and Spring Boot 3.4.2
 - 🅰️ Integrated Angular Frontend
 
+## ✨ Preview
+
+Here's what the chat UI looks like when the Angular frontend is running:
+
+![Chat UI Screenshot](https://github.com/HenryXiloj/demo-ollama-deepseek-r1/blob/master/img1.png?raw=true)
+
 ## 📦 Prerequisites
 
 - Java 21
