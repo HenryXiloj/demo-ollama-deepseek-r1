@@ -132,6 +132,7 @@ New-NetFirewallRule -DisplayName "Ollama-WSL" -Direction Inbound -Protocol TCP -
 
 This project is open-source under the MIT License.
 
-## 🙌 Author
-
-Created with ❤️ by Henry Xiloj 🔗 [Blog: jarmx.blogspot.com](https://jarmx.blogspot.com)
+🙌 Author
+Created with ❤️ by Henry Xiloj
+🔗 GitHub Repo: github.com/HenryXiloj/demo-ollama-deepseek-r1
+📝 Blog: jarmx.blogspot.com
