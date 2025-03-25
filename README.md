@@ -15,7 +15,7 @@ This project demonstrates how to run a local **Large Language Model (LLM)** usin
 
 Here's what the chat UI looks like when the Angular frontend is running:
 
-![Chat UI Screenshot](https://github.com/HenryXiloj/demo-ollama-deepseek-r1/blob/master/img1.png?raw=true)
+![Chat UI Screenshot](https://github.com/HenryXiloj/demo-ollama-deepseek-r1/blob/master/img1.PNG?raw=true)
 
 ## 📦 Prerequisites
 
