@@ -76,6 +76,8 @@ curl -X POST -H "Content-Type: text/plain" \
 ```bash
 sudo ufw enable
 sudo ufw allow 11434
+sudo systemctl stop ollama
+sudo lsof -i :11434
 export OLLAMA_HOST=0.0.0.0
 ollama serve
 ```
