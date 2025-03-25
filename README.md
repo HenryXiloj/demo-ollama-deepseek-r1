@@ -124,7 +124,7 @@ New-NetFirewallRule -DisplayName "Ollama-WSL" -Direction Inbound -Protocol TCP -
 
 - [Ollama Documentation](https://ollama.com)
 - [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
-- [Spring Boot 3.4.2 Docs](https://docs.spring.io/spring-boot/docs/3.4.2/reference/htmlsingle/)
+- [Spring Boot 3.4.2 Docs](https://docs.spring.io/spring-boot/docs/)
 - [Java 21 Features](https://docs.oracle.com/en/java/javase/21/)
 - [LinkedIn Article: Integrating Ollama DeepSeek-R1 with Spring Boot](https://www.linkedin.com/pulse/integrating-ollama-deepseek-r1-spring-boot-henry-xiloj-herrera-jvaye/)
 
