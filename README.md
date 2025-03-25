@@ -94,16 +94,23 @@ New-NetFirewallRule -DisplayName "Ollama-WSL" -Direction Inbound -Protocol TCP -
 
 ```
 src/
-├── main/
-│   ├── java/
-│   │   └── com/example/ollama/
-│   │       ├── ChatController.java
-│   │       ├── OllamaService.java
-│   │       └── dto/
-│   │           ├── OllamaRequest.java
-│   │           └── OllamaResponse.java
-│   └── resources/
-│       └── application.yml
+└── main/
+    ├── java/
+    │   └── com/
+    │       └── henry/
+    │           └── ollama/
+    │               ├── Application.java
+    │               ├── config/
+    │               │   └── OllamaProperties.java
+    │               ├── controller/
+    │               │   └── ChatController.java
+    │               ├── record/
+    │               │   ├── OllamaRequest.java
+    │               │   └── OllamaResponse.java
+    │               └── service/
+    │                   └── OllamaService.java
+    └── resources/
+        └── application.yml
 ```
 
 ## 📚 Resources

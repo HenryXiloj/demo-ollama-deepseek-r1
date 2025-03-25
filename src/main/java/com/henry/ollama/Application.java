@@ -1,4 +1,4 @@
-package com.henry.ollama.deepseekr1;
+package com.henry.ollama;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.henry.ollama.deepseekr1;
+package com.henry.ollama;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

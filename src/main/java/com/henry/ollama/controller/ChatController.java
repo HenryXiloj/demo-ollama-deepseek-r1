@@ -1,6 +1,6 @@
-package com.henry.ollama.deepseekr1.controller;
+package com.henry.ollama.controller;
 
-import com.henry.ollama.deepseekr1.service.OllamaService;
+import com.henry.ollama.service.OllamaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

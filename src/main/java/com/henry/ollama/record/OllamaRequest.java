@@ -1,4 +1,4 @@
-package com.henry.ollama.deepseekr1.record;
+package com.henry.ollama.record;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
