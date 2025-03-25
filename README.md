@@ -2,6 +2,14 @@
 
 This project demonstrates how to run a local **Large Language Model (LLM)** using **[Ollama](https://ollama.com)** and integrate it with a **Spring Boot 3.4.2** application using **DeepSeek-R1**. No need for cloud APIs — run everything locally for maximum performance and data privacy.
 
+### 🎯 Challenge Focus: DeepSeek-R1 Integration
+
+The primary objective was to demonstrate a seamless integration of the DeepSeek-R1 model using Ollama, highlighting:
+- Local AI inference
+- Minimal resource consumption
+- Easy-to-implement AI chat functionality
+- Cross-platform compatibility
+
 ## 🧩 Features
 
 - 🔗 Connect Spring Boot with Ollama's local LLM API
