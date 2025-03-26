@@ -134,5 +134,5 @@ This project is open-source under the MIT License.
 
 🙌 Author
 Created with ❤️ by Henry Xiloj
-🔗 GitHub Repo: github.com/HenryXiloj/demo-ollama-deepseek-r1
-📝 Blog: jarmx.blogspot.com
+- 🔗 GitHub Repo: github.com/HenryXiloj/demo-ollama-deepseek-r1
+- 📝 Blog: jarmx.blogspot.com
